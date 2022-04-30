@@ -18,14 +18,14 @@ Use merge() to combine those separate channels into color.
 
 ## Program:
 ~~~
-Developed By: Syed Abdul Wasih H
+Developed By: Mohan Raj S
 Register Number: 212221240057
 ~~~
 ### i) Convert BGR and RGB to HSV and GRAY:
 ~~~
 import cv2
-image = cv2.imread('pic.jpg')
-cv2.imshow('Original image - Syed Abdul Wasih 212221240057',image)
+image = cv2.imread('bike.jpg')
+cv2.imshow('Original image - Mohan Raj S 212221230065',image)
 #BGR2HSV
 hsv_image = cv2.cvtColor(image,cv2.COLOR_BGR2HSV)
 cv2.imshow('BGR2HSV',hsv_image)
@@ -44,7 +44,7 @@ cv2.destroyAllWindows()
 ### ii)Convert HSV to RGB and BGR:
 ~~~
 import cv2
-image = cv2.imread('pic.jpg')
+image = cv2.imread('bike.jpg')
 #HSV to RGB
 RGB_image = cv2.cvtColor(image,cv2.COLOR_HSV2RGB)
 cv2.imshow('HSV to RGB',RGB_image)
@@ -58,7 +58,7 @@ cv2.destroyAllWindows()
 ### iii)Convert RGB and BGR to YCrCb:
 ~~~
 import cv2
-image = cv2.imread('pic.jpg')
+image = cv2.imread('bike.jpg')
 #RGB to YCrCb
 YCrCb_image = cv2.cvtColor(image,cv2.COLOR_RGB2YCrCb)
 cv2.imshow('RGB to YCrCb',YCrCb_image)
@@ -72,7 +72,7 @@ cv2.destroyAllWindows()
 ### iv)Split and Merge RGB Image:
 ~~~
 import cv2
-image = cv2.imread('pic.jpg')
+image = cv2.imread('bike.jpg')
 blue = image[:,:,0]
 green = image[:,:,1]
 red = image[:,:,2]
@@ -87,7 +87,7 @@ cv2.destroyAllWindows()
 ### v) Split and merge HSV Image:
 ~~~
 import cv2
-image = cv2.imread('pic.jpg')
+image = cv2.imread('bike.jpg')
 hsv = cv2.cvtColor(image, cv2.COLOR_RGB2HSV)
 h,s,v = cv2.split(hsv)
 cv2.imshow('Hue',h)
@@ -100,15 +100,15 @@ cv2.destoryAllWindows()
 ~~~
 ## Output:
 ### i) BGR and RGB to HSV and gray:
-![output](./img/1.png)
-![output](./img/2.png)
+![output](1.png)
+![output](2.png)
 ### ii) HSV to RGB and BGR:
-![output](./img/3.png)
+![output](3.png)
 ### iii) RGB and BGR to YCrCb:
-![output](./img/4.png)
+![output](4.png)
 ### iv) Split and merge RGB Image:
-![output](./img/5.png)
+![output](5.png)
 ### v) Split and merge HSV Image:
-![output](./img/6.png)
+![output](6.png)
 ## Result:
 Thus the color conversion was performed between RGB, HSV and YCbCr color models.
